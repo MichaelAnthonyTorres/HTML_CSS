@@ -1,0 +1,158 @@
+*{
+    margin: 0 auto;
+    font-family: monospace;
+}
+
+body{
+    background-color: rgb(247, 171, 105);
+}
+/* Header */
+header{
+    padding: 1rem;
+    text-align: left;
+    background-color: rgba(66, 165, 165);
+}
+
+ header .desktop a{
+    text-decoration: none;
+    color: rgb(248, 253, 110);
+    margin-right: 3rem;
+    font-size: 1rem;
+ }
+
+ header .mobile{
+    display: none;
+ }
+
+ /* banner */
+
+.banner{
+    font-size: 1.75rem;
+    height: 40rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-image: url('./images/background.jpg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.banner h1{
+    background-color: rgba(0, 0, 0, 70%);
+    color: rgb(249, 99, 82);
+    padding: 3rem;
+    width: 100%;
+}
+
+/* content */
+
+.content{
+    margin: 2rem 1rem;
+}
+
+.content h2{
+    color: rgb(248, 253, 110);
+    margin-bottom: 1rem;
+}
+
+.content p{
+    font-size: 1.25rem;
+    color: white;
+}
+
+/* main images */
+
+.main-images{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.main-images img{
+    width: 30%;
+}
+
+@media only screen and (max-width:768px)
+{
+    .main-images{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .main-images img{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+    
+/* quote */
+
+.quote{
+    background-color: rgba(66, 165, 165);
+    color: rgb(248, 253, 110);
+    padding: 5rem 1rem;
+}
+
+.testimonial{
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+/* join */
+
+.join{
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.join h2{
+    padding: 2rem;
+    font-size: 2.25rem;
+    color: rgb(248, 253, 110);
+    font-weight: 600;
+}
+
+.join img{
+    width: 75%;
+}
+
+/* footer */
+footer{
+    padding: 1rem;
+    text-align: left;
+    background-color: rgba(66, 165, 165);
+}
+
+ footer a{
+    text-decoration: none;
+    color: rgb(248, 253, 110);
+    margin-right: 3rem;
+    font-size: 1rem;
+ }
+
+ @media only screen and (max-width: 425px){
+
+    header .desktop {
+        display: none;
+    }
+
+    header .mobile{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile button{
+        text-align: center;
+        background-color: rgb(248, 253, 110);
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .mobile button a{
+        text-decoration: none;
+        color: rgba(66, 165, 165);
+    }
+ }
